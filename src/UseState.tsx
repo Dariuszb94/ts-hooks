@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function UseState() {
   const [arr, arrSet] = useState<number[]>([]);
+  const [name, nameSet] = useState<string | null>(null);
   return (
     <div>
       <div>
@@ -13,6 +14,16 @@ export default function UseState() {
           Add to array
         </button>
         {JSON.stringify(arr)}
+      </div>
+      <div>
+        <button
+          onClick={() => {
+            nameSet("Darek");
+          }}
+        >
+          Set name
+        </button>
+        {JSON.stringify(name)}
       </div>
     </div>
   );
