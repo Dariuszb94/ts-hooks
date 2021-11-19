@@ -1,3 +1,5 @@
+import { useReducer } from "react";
+
 const initialState = { counter: 100 };
 type ACTIONTYPES =
   | { type: "increment"; payload: number }
@@ -19,7 +21,17 @@ function counterReducer(state: typeof initialState, action: ACTIONTYPES) {
   }
 }
 const UseReducer = () => {
-  return <div></div>;
+  const [state, dispatch] = useReducer(counterReducer, initialState);
+  return (
+    <div>
+      <div>{state.counter}</div>
+      <div>
+        <button onClick={() => dispatch({ type: "increment", payload: 3 })}>
+          INC
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default UseReducer;
