@@ -9,6 +9,16 @@ const UseContext = () => {
   return (
     <UserContext.Provider value={user}>
       <Consumer />
+      <button
+        onClick={() =>
+          userSet({
+            first: "Adam1",
+            last: "Kowalski1",
+          })
+        }
+      >
+        Change Context
+      </button>
     </UserContext.Provider>
   );
 };
