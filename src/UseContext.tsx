@@ -1,5 +1,6 @@
+import UserContext from "./store";
 const UseContext = () => {
-  return <div></div>;
+  return <UserContext.Provider></UserContext.Provider>;
 };
 
 export default UseContext;
