@@ -1,3 +1,4 @@
+import UseContext from "./UseContext";
 import UseEffect from "./UseEffect";
 import UseState from "./UseState";
 
@@ -8,6 +9,8 @@ function App() {
       <UseState />
       <h1>Use effect</h1>
       <UseEffect />
+      <h1>Use context</h1>
+      <UseContext />
     </div>
   );
 }
