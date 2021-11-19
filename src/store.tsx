@@ -5,4 +5,5 @@ const inititalState = {
   last: "B",
 };
 
-const context = createContext(inititalState);
+const context = createContext<typeof inititalState>(inititalState);
+export default context;
