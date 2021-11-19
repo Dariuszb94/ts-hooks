@@ -5,12 +5,14 @@ import UseState from "./UseState";
 function App() {
   return (
     <div>
-      <h1>Use state</h1>
+      <h2>Use state</h2>
       <UseState />
-      <h1>Use effect</h1>
+      <h2>Use effect</h2>
       <UseEffect />
-      <h1>Use context</h1>
+      <h2>Use context</h2>
       <UseContext />
+      <h2>Use reducer</h2>
+      <UseReducer />
     </div>
   );
 }
