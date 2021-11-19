@@ -1,6 +1,7 @@
-import UserContext from "./store";
+import UserContext, { UserState } from "./store";
 const UseContext = () => {
-  return <UserContext.Provider></UserContext.Provider>;
+  const [user, userSet] = useState<UserState>({});
+  return <UserContext.Provider value={user}></UserContext.Provider>;
 };
 
 export default UseContext;
