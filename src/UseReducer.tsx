@@ -29,6 +29,9 @@ const UseReducer = () => {
         <button onClick={() => dispatch({ type: "increment", payload: 3 })}>
           INC
         </button>
+        <button onClick={() => dispatch({ type: "decrement", payload: 1 })}>
+          DEC
+        </button>
       </div>
     </div>
   );
